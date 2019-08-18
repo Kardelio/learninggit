@@ -106,8 +106,25 @@ BREAK - -
 **********
 **********
 
+16. Last one... I would like you finally now to create a PR (Pull Request) for your branch to be 'pulled' into master!
+So that would mean that after review your changes would be added to the coded in master.
+To do this go to github.com and log in as your created account.
+Once in github.com use the search bar or the side panel to find the online repository called "learninggit" made by Kardelio.
+Once there you will hopefully (if you follow step 15) see your branch in a yellow bar with a green button that reads "Compare & Pull Request". Click it.
+Inside the next page write a message to say what your new changes do... and then hit the big green button that reads "Create Pull Request"...
+ONE LUCKY CONTESTANT WILL HAVE THEIR CODE PR'D AND PULLED INTO MASTER IN THE SESSION..... Could it be you!??!
 
+Now sit back and relax and enjoy that last few bits of the session...
+Please prepare any questions you have...
+Also enjoy the extra links below...
 
+     _____
+   .'     '.
+  /  o   o  \
+ |           |
+ |  \     /  |
+  \  '---'  /
+   '._____.'
 
 ===========================================
 ================ Links ====================
