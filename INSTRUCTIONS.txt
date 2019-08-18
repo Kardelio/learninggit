@@ -84,18 +84,27 @@ This will finally change you safely into your created branch and you can ofcours
 to check exactly that and see the asterisk next to your branch and not master! NOW you are safe to mess around with whatever you like in here and it wont effect master (it wont effect your production code, depending on your branching stratey... more later...) 
 
 14. Now you will need to re-use steps 5 - 8 to complete this task.
-Your objective is to create a new file called whatever you like and inside the file write TODO
+Your objective is to create a new file called whatever you like and inside the file write simply what you had for lunch today!
+Its that simple... Create a file inside the repo and in it tell us what you had for lunch. You will need to ADD and COMMITT these changes once you are happy with them.
+(Use 'git add' & 'git commit' to help you do this).Once you have done this STOP and wait to learn about pushing your changes to the server for everyone to enjoy...
 
+**********
+**********
+BREAK - - 
+**********
+**********
 
+15. Use the command:
+	git push origin your_branch_name
+(obviously change the 'your_branch_name' to match the name of the branch you created and have been working on)
+so this will push (upload) your work to the server and create a branch that matches yours on the server's version of the repo. So you code will be in the cloud but not in master. This is normal and we would then create a pull request which we will cover later in order to get your branch code into master... Once it has been OK'd.
+FYI Origin is just a nickname for the server that git gives it, as its quicker than writing out the entire url again...
 
-
-
-
-
-
-
-
-
+**********
+**********
+BREAK - - 
+**********
+**********
 
 
 
