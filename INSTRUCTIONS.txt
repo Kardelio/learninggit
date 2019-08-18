@@ -1,0 +1,134 @@
+===========================================
+======= Welcome to the GIT tutorial =======
+===========================================
+
+NOTE: We are using digital instructions in order to save some trees
+
+Below are the tasks that you will need to complete one after the other in order to complete this git tutorial session and fully understand the git commands.
+
+At the end of this file are a collection of links and more advanced hints that can be followed in order to read more about git, continue to practice git in different settings and ofcourse to sure up what you have learnt today...
+
+Good Luck!
+
+P.S.
+If you have an issue connecting to github because of shopdirects network then you can try this command to fix it:
+(please replace the USERNAME & PASSWORD with your own)...
+
+Git config --global http.proxy http://USERNAME:PASSWORD@tmgwebvip:8080
+
+===========================================
+================ Tasks ====================
+===========================================
+
+1. If you are reading this then you have already completed task one which is to clone the repository onto your own machine using the command:
+	git clone [url]
+
+2. Now that you have the 'code' (a copy of the repo) you can edit it however you like, however before you do run the command:
+	git status
+and what do you see?
+
+3.Now open the file called 'data.txt' and fill in your name in the space, today's date in the space and at the bottom insert your favourite joke or just any old joke! Save the file!
+
+4. Now run that:
+	git status
+command again... What do you see? What has changed?
+
+5. Now use the command:
+	git add .
+(yes there is a fullstop at the end, dont forget it!)
+This takes your changes from the working directory and puts them in the staging area, the fullstop simply means 'ALL CHANGES PLEASE' so git will take all of them.
+
+6. Now again use the:
+	git status
+command and see what the result is. The git status command is a really good one to constantly check the status of your changes. Its like a sanity check.
+
+7. Before we can use the next command (the committ command) we have to tell git who we are, as part of gits power comes from the fact that it attaches an author to committs so you can see who did what and when, this is really simply it is just two seperate commands:
+	git config -–global user.name YOUR_GITHUB_USER
+	git config -–global user.email YOUR_GITHUB_EMAIL
+please replace the bits in the capital letters to match those of your own GITHUB account information! (you only need to do this bit once, the computer will remember it for all future needs)
+
+8. Finally use this command:
+(obviously change the bit in the speech marks to be your message)
+	git commit -m "insert your message here"
+This is the all important SAVE action, the commit action that saves your all your changes that are in the 'staging area' to a commit and logs it into the commit history for all time! And just to be sure use the:
+	git status
+command one more time and see what happens?
+
+9. Now use the command
+	git log
+and see the history of the repo and see all the previous committs, and notice the top entry... Its YOURS! You have contributed to this project, however the changes are only on your machine at the moment, lets look at how you can upload/submit them to the server!
+
+**********
+**********
+BREAK - - 
+**********
+**********
+
+10. Ok sooooo, in the last set of tasks you committed your changes directly to the master branch. THIS IS NOT A GOOD IDEA and the best practises would instead get you to make your own 'BRANCH' and change the code in there first, then you can re-join your branch back to master after a Pull Request for example or someone else checking over your code at least. So in the next few tasks you will make your own branch and practice what we did before AGAIN... Repetition, repetition, repetition...
+11. You are currently in the master branch to see this for yourself use the command:
+	git branch
+and it will display a list of branches that are on your machine and place a asterik next to the one that you are IN.
+
+12. Ok no use the command:
+	git branch YOUR_INITIALS_branch
+Please replace the capital "YOUR_INITIALS" with your initials...Please...
+This will now have created a brand new branch for you to safely work in. However we are NOT inside that branch yet, it has only created it for us, not changed us into it... Use the
+	git branch
+command to see exactly that, your new branch and master, but the asterisk is still pointing at master!
+
+13. Use the command:
+	git checkout YOUR_INITIALS_branch
+The "YOUR_INITIALS_branch" should match the EXACT name that you just called your newly created branch before in task 12!
+This will finally change you safely into your created branch and you can ofcourse do
+	git branch
+to check exactly that and see the asterisk next to your branch and not master! NOW you are safe to mess around with whatever you like in here and it wont effect master (it wont effect your production code, depending on your branching stratey... more later...) 
+
+14. Now you will need to re-use steps 5 - 8 to complete this task.
+Your objective is to create a new file called whatever you like and inside the file write TODO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================
+================ Links ====================
+===========================================
+
+http://rogerdudler.github.io/git-guide/
+
+www.raywenderlich.com
+
+https://www.atlassian.com/git/tutorials
+
+http://learngitbranching.js.org/
+http://learngitbranching.js.org/?NODEMO
+
+https://www.youtube.com/watch?v=w3jLJU7DT5E
+
+===========================================
+================ Hints ====================
+===========================================
+
+HEAD is a reference to the last commit in the currently checked-out branch. HEAD is a reference to the last commit in the currently checked-out branch.
+
+To remove your current commit from the history, use:ぎt reset --hard HEAD~1his moves your HEAD away from the current commit backwards by one, to before that commit, the lost commit is now in the reflog and gone from our usual repo.
+
+Use git commit –amend followed by any changes, to edit the last commit you made, e.g. git commit –amend –m ‘new message’
+
+Use git log --pretty --oneline –graph often to see the lay of the land and understand the relationship between your branches and merges.
+
+Git reflog will give you a list of lost commits that can be brought back to life by starting a new brach with them like so: git branch desired_name short_hash_num 
+
+To delete a branch use: git branch –D branch_name
+
+----------------- END ----------------- 
