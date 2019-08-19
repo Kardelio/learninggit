@@ -147,7 +147,7 @@ https://www.youtube.com/watch?v=w3jLJU7DT5E
 
 HEAD is a reference to the last commit in the currently checked-out branch. HEAD is a reference to the last commit in the currently checked-out branch.
 
-To remove your current commit from the history, use:ぎt reset --hard HEAD~1his moves your HEAD away from the current commit backwards by one, to before that commit, the lost commit is now in the reflog and gone from our usual repo.
+To remove your current commit from the history, use: 'git reset --hard HEAD~1' this moves your HEAD away from the current commit backwards by one, to before that commit, the lost commit is now in the reflog and gone from our usual repo.
 
 Use git commit –amend followed by any changes, to edit the last commit you made, e.g. git commit –amend –m ‘new message’
 
