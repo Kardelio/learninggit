@@ -11,23 +11,28 @@ At the end of this file are a collection of links and more advanced hints that c
 Good Luck!
 
 P.S.
-If you have an issue connecting to github because of shopdirects network then you can try this command to fix it:
-(please replace the USERNAME & PASSWORD with your own)...
+If you have an issue connecting to github because of shopdirects network then you can try these two commands to fix it:
 
-Git config --global http.proxy http://USERNAME:PASSWORD@tmgwebvip:8080
+git config --global http.proxy http://ipv4.195.59.45.40.webdefence.global.blackspider.com:8081
+git config --global https.proxy http://ipv4.195.59.45.40.webdefence.global.blackspider.com:8081
 
 ===========================================
 ================ Tasks ====================
 ===========================================
 
 1. If you are reading this then you have already completed task one which is to clone the repository onto your own machine using the command:
-	git clone [url]
+	git clone https://github.com/kardelio/learninggit.git
+You then hopefully CD'd into it by typing:
+	cd learninggit
 
 2. Now that you have the 'code' (a copy of the repo) you can edit it however you like, however before you do run the command:
 	git status
 and what do you see?
+You can also list the files inside the terminal if you like by using:
+	ls
+but maybe you prefer to look at the files and folders in the explorer or in finder.... Up to you?
 
-3.Now open the file called 'data.txt' and fill in your name in the space, today's date in the space and at the bottom insert your favourite joke or just any old joke! Save the file!
+3.Now open the file called 'data.txt' in whatever text editor you like (maybe notepad, vscode, notepad++ or vim ooo) and fill in your name in the space, today's date in the space and at the bottom insert your favourite joke or just any old joke! Save the file!
 
 4. Now run that:
 	git status
@@ -53,6 +58,9 @@ please replace the bits in the capital letters to match those of your own GITHUB
 This is the all important SAVE action, the commit action that saves your all your changes that are in the 'staging area' to a commit and logs it into the commit history for all time! And just to be sure use the:
 	git status
 command one more time and see what happens?
+IF you typed 'git commit' with no message at the end, DONT PANIC, git has opened vi (a text editor) and is asking you directly for the message. You can type the following to get out of this... (type it as you see it <Esc> is escape key...)
+<Esc> : q ! <Enter>
+after you are free, please try the original commit command again, with a message this time!
 
 9. Now use the command
 	git log
