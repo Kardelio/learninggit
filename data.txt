@@ -1,6 +1,6 @@
-My name is _________
+My name is jurgita
 and I am learning how to use git from the command line.
 
-The date today is __________ and here is a joke:
+The date today is 2019-08-20 and here is a joke:
 
----> INSERT JOKE HERE <---
+---> :) <---
