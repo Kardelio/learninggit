@@ -140,8 +140,6 @@ Also enjoy the extra links below...
 
 http://rogerdudler.github.io/git-guide/
 
-www.raywenderlich.com
-
 https://www.atlassian.com/git/tutorials
 
 http://learngitbranching.js.org/
