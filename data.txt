@@ -1,6 +1,4 @@
-My name is _________
-and I am learning how to use git from the command line.
+My name is Alex B
+and I am learning how to use git
+the date today is 20/08/19 and here is a joke
 
-The date today is __________ and here is a joke:
-
----> INSERT JOKE HERE <---
